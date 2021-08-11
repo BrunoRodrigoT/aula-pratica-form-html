@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 part.1</title>
+    <style>
+        form {
+            font-family: monospace;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+            height: 350px;
+            border: 1px solid black;
+            padding-top: 100px;
+        }
+
+        .botao {
+            box-shadow: 2px 2px 3px black;
+            height: 30px; 
+        }
+
+        .desc {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        fieldset {
+            width: 500px;
+            height: 350px;
+            margin: auto;
+            border: none;
+        }
+
+        #titulo {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login {
+            height: 18px;
+
+        }
+
+        #pass {
+            margin-right: 15px;
+        }
+        #botoes{
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="atividade.http" method="POST">
+
+        <fieldset>
+            <h2 id="titulo">Tela de Login</h2>
+
+            <label class="desc" for="usuario">Usuário</label>
+            <input class="login" type="text" id="usuario"><br><br>
+            <label id="pass" class="desc" for="senha">Senha</label>
+            <input class="login" type="password" id="senha">
+            <a href="restaurarsenha.com">Esqueceu a senha? Clique aqui.</a><br><br>
+
+            <div id="botoes">
+                <input class="botao" type="submit" value="Fazer Login">
+                <input class="botao" type="submit" value="Cadastrar">
+            </div>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

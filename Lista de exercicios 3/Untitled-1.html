@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            box-shadow: 2px 2px 3px black;
+        }
+        fieldset{
+            width: 50%;
+            height: 100%;
+        }
+        .titulos{ 
+            background-color: rgb(173, 173, 173);
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+    <h3 class="titulos">Manutenção do Colegiado</h3>
+    <table border="1">
+        <tr>
+            <td>Unidade</td>
+            <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+        </tr>
+        <tr>
+            <td>Tipo de Colegiado</td>
+            <td>CONGREGAÇÃO</td>
+        </tr>
+    </table><br><br>
+
+    <h3 class="titulos">Orgão Colegiado</h3>
+    
+    <section>
+    <form>
+       <label for="nome">Nome</label> 
+        <input type="text" id="nome" placeholder="CONGREGAÇÃO FACULDADE DE ILHA SOLTEIRA"><br><br>
+        
+        <label for="sigla">Sigla</label>
+        <input type="text" id="sigla" placeholder="CFIS">
+
+        <label class="left">Status</label>
+        <select class="left" id="status">
+            <option> Selecione o Status </option>
+            <option value="ativado">Ativado</option>
+            <option value="desativado">Desativado</option>
+        </select><br><br>
+
+        <label for="dataA"> Data de Ativação:</label>
+        <input type="date" id="dataA">
+
+        <label class="left" for="dataB">Data de Desativação:</label>
+        <input class="left" type="date" id="dataB"><br><br>
+
+        <label for="orgaoO">Orgão de Origem:</label>
+        <input type="text" id="orgaoO">
+        <input type="submit" value="Buscar"><br><br>
+
+        <label for="orgaoS">Orgão Superior</label>
+        <input type="text" id="orgaoS">
+        <input type="submit" value="Buscar"><br><br>
+
+        <label for="doc">Documentação:</label>
+        <textarea id="doc" name="documentação" cols="60" rows="5" placeholder="Órgão criado com o objetivo de aprovar normas da unidade."></textarea><br><br>
+
+        <input type="submit" value="Salvar">
+        <input type="submit" value="Excluir">
+
+    </form>
+</section>
+</fieldset>    
+</body>
+</html>
